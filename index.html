@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Semester Grade Tracker</h1>
+        <form id="gradeForm">
+            <input type="text" id="username" placeholder="Enter your name" required>
+            <input type="number" id="semesters" placeholder="Number of semesters" min="1" required>
+            <select id="gradeMax" required>
+                <option value="10" selected>Grade out of 10</option>
+                <option value="5">Grade out of 5</option>
+            </select>
+            <button type="submit">Next</button>
+        </form>
+
+        <div id="gradeInputs" class="hidden"></div>
+        <button id="generateGraph" class="hidden">Generate Graph</button>
+
+        <div id="userDisplay" class="hidden"></div>
+        <div class="chart-container hidden">
+            <canvas id="gradeChart"></canvas>
+        </div>
+        <button id="saveJpegBtn" class="hidden">Save as JPEG</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

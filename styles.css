@@ -1,0 +1,101 @@
+body {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 750px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    padding: 32px 28px 40px 28px;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: #3a3a3a;
+    margin-bottom: 24px;
+}
+
+form input, #gradeInputs input, form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #bfc9d1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+
+form input:focus, #gradeInputs input:focus, form select:focus {
+    border: 1.5px solid #6a82fb;
+    outline: none;
+}
+
+button, #saveJpegBtn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+button:hover, #saveJpegBtn:hover {
+    background: linear-gradient(90deg, #fc5c7d 0%, #6a82fb 100%);
+}
+
+#gradeInputs {
+    margin-top: 18px;
+}
+
+#gradeInputs label {
+    display: block;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.hidden {
+    display: none;
+}
+
+.chart-container {
+    position: relative;
+    margin-top: 32px;
+    background: #f7faff;
+    border-radius: 14px;
+    padding: 24px 16px 16px 16px;
+    box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.08);
+}
+
+#gradeChart {
+    width: 100% !important;
+    height: 320px !important;
+}
+
+#userDisplay {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #6a82fb;
+    font-size: 1.1rem;
+    background: rgba(255,255,255,0.7);
+    padding: 6px 14px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.05);
+    pointer-events: none;
+    display: block;
+    text-align: right;
+}
